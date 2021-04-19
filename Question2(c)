@@ -1,0 +1,9 @@
+SELECT MemberID,LastName,FirstName
+FROM Member m
+WHERE EXISTS
+(
+       SELECT * FROM Entry e
+       INNER JOIN Entry e
+       ON m.MemberID = e.MemberID
+       WHERE e.Year <> 2013;
+)
