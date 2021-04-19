@@ -1,0 +1,2 @@
+join -t$'\t' expression.txt annotation.txt
+
