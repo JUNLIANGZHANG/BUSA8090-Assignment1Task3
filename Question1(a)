@@ -1,0 +1,9 @@
+touch expression.txt 
+echo -e "gene\texpr_value" >> expression.txt 
+echo -e "alr1207\t8303" >> expression.txt 
+echo -e "alr2938\t10323" >> expression.txt 
+echo -e "alr3395\t1432" >> expression.txt 
+echo -e "alr3556\t8043" >> expression.txt 
+echo -e "alr4392\t729" >> expression.txt 
+echo -e "alr4851\t633" >> expression.txt 
+echo -e "alr5000\t5732" >> expression.txt
