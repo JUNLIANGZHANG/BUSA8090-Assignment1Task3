@@ -1,0 +1,7 @@
+SELECT LastName,FirstName,MemberID
+FROM Member m
+WHERE m.MemberID NOT IN (
+SELECT e.MemberID
+FROM Entry e
+ );
+
