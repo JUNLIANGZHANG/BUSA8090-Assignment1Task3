@@ -1,0 +1,4 @@
+touch annotation.txt 
+echo -e "gene\tfunction\tmetabolism" >> annotation.txt 
+echo -e "alr4851\tpreprotein translocase subunit\tProtein and peptide secretion" >> annotation.txt 
+echo -e "alx2938\tiron superoxide dismutase\tDetoxification" >> annotation.txt
