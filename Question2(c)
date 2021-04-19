@@ -1,9 +1,10 @@
-SELECT MemberID,LastName,FirstName
+SELECT DISTINCT m.MemberID,m.LastName,m.FirstName
 FROM Member m
-WHERE EXISTS
+INNER JOIN Entry e
+ON m.MemberID = e.MemberID
+WHERE m.MemberId NOT IN
 (
-       SELECT * FROM Entry e
-       INNER JOIN Entry e
-       ON m.MemberID = e.MemberID
-       WHERE e.Year <> 2013;
-)
+     SELECT e.MemberID FROM Entry e
+     WHERE e.Year = 2013
+); 
+
